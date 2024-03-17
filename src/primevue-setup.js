@@ -95,6 +95,7 @@ import TreeSelect from 'primevue/treeselect';
 import TreeTable from 'primevue/treetable';
 import TriStateCheckbox from 'primevue/tristatecheckbox';
 import VirtualScroller from 'primevue/virtualscroller';
+import Editor from 'primevue/editor';
 
 /**
  * Setup PrimeVue for the Vue.js application.
@@ -145,6 +146,7 @@ export default function setupPrimeVue(app) {
     app.component('Dock', Dock);
     app.component('Dropdown', Dropdown);
     app.component('DynamicDialog', DynamicDialog);
+    app.component('Editor', Editor);
     app.component('Fieldset', Fieldset);
     app.component('FileUpload', FileUpload);
     app.component('Galleria', Galleria);

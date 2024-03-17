@@ -15,6 +15,20 @@ export const routes = [
                 name: 'dashboard',
                 component: () => import('@/views/Dashboard.vue')
             },
+
+            // product
+            {
+                path: '/product',
+                name: 'product_index',
+                component: () => import('@/views/pages/product/index.vue'),
+            },
+
+            {
+                path: '/product/add',
+                name: 'product_add',
+                component: () => import('@/views/pages/product/add.vue')
+            },
+
             {
                 path: '/uikit/formlayout',
                 name: 'formlayout',
@@ -139,6 +153,11 @@ export const routes = [
                 component: () => import('@/views/pages/Crud.vue')
             },
             {
+                path: '/pages/landing',
+                name: 'crud',
+                component: () => import('@/views/pages/landing.vue')
+            },
+            {
                 path: '/documentation',
                 name: 'documentation',
                 component: () => import('@/views/utilities/Documentation.vue')
@@ -170,4 +189,4 @@ export const routes = [
         name: 'error',
         component: () => import('@/views/pages/auth/Error.vue')
     }
-]
+];

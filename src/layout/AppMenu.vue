@@ -6,45 +6,75 @@ import AppMenuItem from './AppMenuItem.vue';
 const model = ref([
     {
         label: 'Home',
-        items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+        items: [{ label: 'Dashboard', icon: 'fa-solid fa-gears', to: '/' }]
     },
     {
-        label: 'UI Components',
+        label: 'Mục quản ly',
         items: [
-            { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
-            { label: 'Input', icon: 'pi pi-fw pi-check-square', to: '/uikit/input' },
-            { label: 'Float Label', icon: 'pi pi-fw pi-bookmark', to: '/uikit/floatlabel' },
+            { label: 'Quản lý sản phẩm', icon: 'fa-solid fa-gears', to: '/product' },
+            { label: 'Input', icon: 'fa-solid fa-gears', to: '/uikit/input' },
+            { label: 'Float Label', icon: 'fa-solid fa-gears', to: '/uikit/floatlabel' },
             {
                 label: 'Invalid State',
-                icon: 'pi pi-fw pi-exclamation-circle',
+                icon: 'fa-solid fa-gears',
                 to: '/uikit/invalidstate'
             },
             {
                 label: 'Button',
-                icon: 'pi pi-fw pi-mobile',
+                icon: 'fa-solid fa-gears',
                 to: '/uikit/button',
                 class: 'rotated-icon'
             },
-            { label: 'Table', icon: 'pi pi-fw pi-table', to: '/uikit/table' },
-            { label: 'List', icon: 'pi pi-fw pi-list', to: '/uikit/list' },
-            { label: 'Tree', icon: 'pi pi-fw pi-share-alt', to: '/uikit/tree' },
-            { label: 'Panel', icon: 'pi pi-fw pi-tablet', to: '/uikit/panel' },
-            { label: 'Overlay', icon: 'pi pi-fw pi-clone', to: '/uikit/overlay' },
-            { label: 'Media', icon: 'pi pi-fw pi-image', to: '/uikit/media' },
-            { label: 'Menu', icon: 'pi pi-fw pi-bars', to: '/uikit/menu', preventExact: true },
-            { label: 'Message', icon: 'pi pi-fw pi-comment', to: '/uikit/message' },
-            { label: 'File', icon: 'pi pi-fw pi-file', to: '/uikit/file' },
-            { label: 'Chart', icon: 'pi pi-fw pi-chart-bar', to: '/uikit/charts' },
-            { label: 'Misc', icon: 'pi pi-fw pi-circle', to: '/uikit/misc' }
+            { label: 'Table', icon: 'fa-solid fa-gears', to: '/uikit/table' },
+            { label: 'List', icon: 'fa-solid fa-gears', to: '/uikit/list' },
+            { label: 'Tree', icon: 'fa-solid fa-gears', to: '/uikit/tree' },
+            { label: 'Panel', icon: 'fa-solid fa-gears', to: '/uikit/panel' },
+            { label: 'Overlay', icon: 'fa-solid fa-gears', to: '/uikit/overlay' },
+            { label: 'Media', icon: 'fa-solid fa-gears', to: '/uikit/media' },
+            { label: 'Menu', icon: 'fa-solid fa-gears', to: '/uikit/menu', preventExact: true },
+            { label: 'Message', icon: 'fa-solid fa-gears', to: '/uikit/message' },
+            { label: 'File', icon: 'fa-solid fa-gears', to: '/uikit/file' },
+            { label: 'Chart', icon: 'fa-solid fa-gears', to: '/uikit/charts' },
+            { label: 'Misc', icon: 'fa-solid fa-gears', to: '/uikit/misc' }
+        ]
+    },
+    {
+        label: 'UI Components',
+        items: [
+            { label: 'Form Layout', icon: 'fa-solid fa-gears', to: '/uikit/formlayout' },
+            { label: 'Input', icon: 'fa-solid fa-gears', to: '/uikit/input' },
+            { label: 'Float Label', icon: 'fa-solid fa-gears', to: '/uikit/floatlabel' },
+            {
+                label: 'Invalid State',
+                icon: 'fa-solid fa-gears',
+                to: '/uikit/invalidstate'
+            },
+            {
+                label: 'Button',
+                icon: 'fa-solid fa-gears',
+                to: '/uikit/button',
+                class: 'rotated-icon'
+            },
+            { label: 'Table', icon: 'fa-solid fa-gears', to: '/uikit/table' },
+            { label: 'List', icon: 'fa-solid fa-gears', to: '/uikit/list' },
+            { label: 'Tree', icon: 'fa-solid fa-gears', to: '/uikit/tree' },
+            { label: 'Panel', icon: 'fa-solid fa-gears', to: '/uikit/panel' },
+            { label: 'Overlay', icon: 'fa-solid fa-gears', to: '/uikit/overlay' },
+            { label: 'Media', icon: 'fa-solid fa-gears', to: '/uikit/media' },
+            { label: 'Menu', icon: 'fa-solid fa-gears', to: '/uikit/menu', preventExact: true },
+            { label: 'Message', icon: 'fa-solid fa-gears', to: '/uikit/message' },
+            { label: 'File', icon: 'fa-solid fa-gears', to: '/uikit/file' },
+            { label: 'Chart', icon: 'fa-solid fa-gears', to: '/uikit/charts' },
+            { label: 'Misc', icon: 'fa-solid fa-gears', to: '/uikit/misc' }
         ]
     },
     {
         label: 'Prime Blocks',
         items: [
-            { label: 'Free Blocks', icon: 'pi pi-fw pi-eye', to: '/blocks', badge: 'NEW' },
+            { label: 'Free Blocks', icon: 'fa-solid fa-gears', to: '/blocks', badge: 'NEW' },
             {
                 label: 'All Blocks',
-                icon: 'pi pi-fw pi-globe',
+                icon: 'fa-solid fa-gears',
                 url: 'https://www.primefaces.org/primeblocks-vue',
                 target: '_blank'
             }
@@ -53,10 +83,10 @@ const model = ref([
     {
         label: 'Utilities',
         items: [
-            { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', to: '/utilities/icons' },
+            { label: 'PrimeIcons', icon: 'fa-solid fa-gears', to: '/utilities/icons' },
             {
                 label: 'PrimeFlex',
-                icon: 'pi pi-fw pi-desktop',
+                icon: 'fa-solid fa-gears',
                 url: 'https://www.primefaces.org/primeflex/',
                 target: '_blank'
             }
@@ -64,53 +94,53 @@ const model = ref([
     },
     {
         label: 'Pages',
-        icon: 'pi pi-fw pi-briefcase',
+        icon: 'fa-solid fa-gears',
         to: '/pages',
         items: [
             {
                 label: 'Landing',
-                icon: 'pi pi-fw pi-globe',
+                icon: 'fa-solid fa-gears',
                 to: '/landing'
             },
             {
                 label: 'Auth',
-                icon: 'pi pi-fw pi-user',
+                icon: 'fa-solid fa-gears',
                 items: [
                     {
                         label: 'Login',
-                        icon: 'pi pi-fw pi-sign-in',
+                        icon: 'fa-solid fa-gears',
                         to: '/auth/login'
                     },
                     {
                         label: 'Error',
-                        icon: 'pi pi-fw pi-times-circle',
+                        icon: 'fa-solid fa-gears',
                         to: '/auth/error'
                     },
                     {
                         label: 'Access Denied',
-                        icon: 'pi pi-fw pi-lock',
+                        icon: 'fa-solid fa-gears',
                         to: '/auth/access'
                     }
                 ]
             },
             {
                 label: 'Crud',
-                icon: 'pi pi-fw pi-pencil',
+                icon: 'fa-solid fa-gears',
                 to: '/pages/crud'
             },
             {
                 label: 'Timeline',
-                icon: 'pi pi-fw pi-calendar',
+                icon: 'fa-solid fa-gears',
                 to: '/pages/timeline'
             },
             {
                 label: 'Not Found',
-                icon: 'pi pi-fw pi-exclamation-circle',
+                icon: 'fa-solid fa-gears',
                 to: '/pages/notfound'
             },
             {
                 label: 'Empty',
-                icon: 'pi pi-fw pi-circle-off',
+                icon: 'fa-solid fa-gears',
                 to: '/pages/empty'
             }
         ]
@@ -120,40 +150,40 @@ const model = ref([
         items: [
             {
                 label: 'Submenu 1',
-                icon: 'pi pi-fw pi-bookmark',
+                icon: 'fa-solid fa-gears',
                 items: [
                     {
                         label: 'Submenu 1.1',
-                        icon: 'pi pi-fw pi-bookmark',
+                        icon: 'fa-solid fa-gears',
                         items: [
-                            { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-bookmark' }
+                            { label: 'Submenu 1.1.1', icon: 'fa-solid fa-gears' },
+                            { label: 'Submenu 1.1.2', icon: 'fa-solid fa-gears' },
+                            { label: 'Submenu 1.1.3', icon: 'fa-solid fa-gears' }
                         ]
                     },
                     {
                         label: 'Submenu 1.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-bookmark' }]
+                        icon: 'fa-solid fa-gears',
+                        items: [{ label: 'Submenu 1.2.1', icon: 'fa-solid fa-gears' }]
                     }
                 ]
             },
             {
                 label: 'Submenu 2',
-                icon: 'pi pi-fw pi-bookmark',
+                icon: 'fa-solid fa-gears',
                 items: [
                     {
                         label: 'Submenu 2.1',
-                        icon: 'pi pi-fw pi-bookmark',
+                        icon: 'fa-solid fa-gears',
                         items: [
-                            { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-bookmark' }
+                            { label: 'Submenu 2.1.1', icon: 'fa-solid fa-gears' },
+                            { label: 'Submenu 2.1.2', icon: 'fa-solid fa-gears' }
                         ]
                     },
                     {
                         label: 'Submenu 2.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-bookmark' }]
+                        icon: 'fa-solid fa-gears',
+                        items: [{ label: 'Submenu 2.2.1', icon: 'fa-solid fa-gears' }]
                     }
                 ]
             }
@@ -164,25 +194,25 @@ const model = ref([
         items: [
             {
                 label: 'Documentation',
-                icon: 'pi pi-fw pi-question',
+                icon: 'fa-solid fa-gears',
                 to: '/documentation'
             },
             {
                 label: 'Figma',
                 url: 'https://www.dropbox.com/scl/fi/bhfwymnk8wu0g5530ceas/sakai-2023.fig?rlkey=u0c8n6xgn44db9t4zkd1brr3l&dl=0',
-                icon: 'pi pi-fw pi-pencil',
+                icon: 'fa-solid fa-gears',
                 target: '_blank'
             },
             {
                 label: 'View Source',
-                icon: 'pi pi-fw pi-search',
+                icon: 'fa-solid fa-gears',
                 url: 'https://github.com/primefaces/sakai-vue',
                 target: '_blank'
             },
             {
                 label: 'Nuxt Version',
                 url: 'https://github.com/primefaces/sakai-nuxt',
-                icon: 'pi pi-fw pi-star'
+                icon: 'fa-solid fa-gears'
             }
         ]
     }
@@ -192,6 +222,7 @@ const model = ref([
 <template>
     <ul class="layout-menu">
         <template v-for="(item, i) in model" :key="item">
+            {{ item.separa }}
             <app-menu-item v-if="!item.separator" :item="item" :index="i"></app-menu-item>
             <li v-if="item.separator" class="menu-separator"></li>
         </template>
